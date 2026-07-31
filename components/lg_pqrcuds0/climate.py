@@ -22,7 +22,7 @@ CONFIG_SCHEMA = climate.climate_schema(LgHvac).extend(
 
 
 async def to_code(config):
-    var = await cg.new_Pvariable(config[CONF_ID])
+    var = cg.new_Pvariable(config[CONF_ID])
     await cg.register_component(var, config)
     await climate.register_climate(var, config)
     await uart.register_uart_device(var, config)
