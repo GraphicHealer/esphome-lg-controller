@@ -276,3 +276,7 @@ climate:
 ## License
 
 This project is licensed under the 0BSD License. See the LICENSE file for details.
+
+
+## AI disclaimer
+I did use AI to write this README, to find the bits of code I was looking for in the original Repo, and to help transliterate the old ESPHome code to modern standards. I still wrote most of it myself, the AI was used as a research and assisting tool through the Devin platform.
