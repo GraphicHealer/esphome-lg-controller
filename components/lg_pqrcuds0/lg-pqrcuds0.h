@@ -6,6 +6,8 @@
 
 #define TAG "lg_pqrcuds0"
 
+namespace esphome::lg_pqrcuds0 {
+
 class LgHvac : public climate::Climate, public PollingComponent, public uart::UARTDevice
 {
 public:
@@ -242,3 +244,5 @@ protected:
 
     float hysteresis_ = 0.5;
 };
+
+}  // namespace esphome::lg_pqrcuds0
