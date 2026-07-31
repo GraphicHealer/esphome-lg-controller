@@ -188,13 +188,6 @@ climate:
       id: auto_dry
       icon: mdi:fan-clock
 ```
-
-### Substitutions used above
-
-- `${deviceid}`: Unique ESPHome device ID.
-- `${devicename}`: Friendly name shown in Home Assistant.
-- `${temperature_sensor_entity_id}`: Entity ID of the Home Assistant temperature sensor used as the room temperature.
-
 ## Configuration Options
 
 ### `climate` platform
@@ -214,7 +207,6 @@ climate:
 
 ### Notes
 
-- The `tx_pin` in `uart:` is unused by the component but must be defined for the ESPHome `uart` platform. You can set it to an unused GPIO.
 - The `rx_pin` must be passed both in `uart: rx_pin:` and in the `climate:` `rx_pin:` so the component can control the pin directly.
 - The `uart:` `baud_rate` is always **104** for the LG wired controller.
 
